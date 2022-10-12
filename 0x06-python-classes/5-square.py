@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """ This module defines an empty class named square """
 
 
@@ -29,12 +29,8 @@ class Square:
 
     def my_print(self):
         """ Print the square with the # character. """
-        area = self.area()
-        for i in range(0, area):
-            if self.__size == 0:
-                print("")
-            elif i % self.__size == 0:
-                print("\n#", end='')
-            else:
-                print("#", end='')
-        print("")
+        for i in range(0, self.__size):
+            [print("#", end="") for j in range(self.__size)]
+            print("")
+        if self.__size == 0:
+            print("")
